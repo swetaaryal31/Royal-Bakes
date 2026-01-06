@@ -6,19 +6,24 @@
 
 /* ===== BODY ===== */
 body {
-    background-color: #FFF3E0; /* Cream */
+    background-color: #FFF3E0; 
     font-family: Arial, sans-serif;
+    padding-top: 80px;
 }
 
 /* ===== NAVBAR ===== */
 #nav_bar {
+    position: fixed;
+    top: 0;
+    left: 0;
     height: 80px;
     width: 100%;
-    background-color: #6B3E0F; /* Dark Brown */
+    background-color: #6B3E0F; 
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 30px;
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 #logo img {
@@ -35,7 +40,7 @@ body {
 
 #nav a,
 #login_register a {
-    color: #FFE6C8; /* Soft Gold */
+    color: #ffffff; 
     text-decoration: none;
     margin: 0 15px;
     font-size: 18px;
@@ -44,57 +49,130 @@ body {
 
 #nav a:hover,
 #login_register a:hover {
-    color: #C89B3C; /* Rich Gold */
+    color: #C89B3C; 
 }
 
 /* ===== MAIN CONTAINER ===== */
 .container {
-    background-color: #FFF8EE; /* Soft Cream */
+    background-color: #FFF8EE; 
     width: 100%;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hero-section */
+.hero-section {
     height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+                      url("./images/bakery.png");
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
 
+.hero-content {
+    /* background: rgba(0, 0, 0, 0.5); */
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.hero-content h1 {
+    color: #FFF3E0;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    color: #FFD59A;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero-btn {
+    text-decoration: none;
+    background-color: #C89B3C;
+    color: #3E2723;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.hero-btn:hover {
+    background-color: #B0892F;
+}
+
+
 /* ===== REGISTER / LOGIN FORM ===== */
 #register_form {
-    background-color: #F5E6CC; /* Light Beige */
+    background-color: #fffbf3; 
     width: 350px;
     padding: 20px;
-    border: 2px solid #6B3E0F;
+    border: 1px solid #b5b5b5;
+    box-shadow: 5px 5px 15px #E0C097;
+    border: 1px solid #E0C097;
     border-radius: 8px;
 }
 
 #form {
-    border: 2px solid #6B3E0F;
-    padding: 10px;
-    border-radius: 5px;
+    background-color: #fffbf3; 
+    width: 350px;
+    padding: 20px;
+    border: 1px solid #b5b5b5;
+    box-shadow: 5px 5px 15px #E0C097;
+    border: 1px solid #E0C097;
+    border-radius: 8px;
 }
 
 label {
-    display: inline-block;
-    width: 100px;
+    display: block;
+    width: 150px;
+    margin-bottom: 5px;
     color: #3E2723;
-    font-weight: bold;
+    font-weight: lighter;
+}
+
+#password, #first_name, #last_name, #email{
+    height:30px;
+    width: 300px;
 }
 
 /* ===== BUTTONS ===== */
 #register_btn,
-#login_btn,
-button {
+#login_btn{
     padding: 6px 10px;
-    background-color: #C89B3C; /* Gold */
-    color: #3E2723; /* Dark Brown */
+    background-color: #C89B3C; 
+    color: #3E2723; 
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 300px;
+}
+#add_to_cart{
+    padding: 6px 10px;
+    background-color: #C89B3C; 
+    color: #3E2723; 
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-weight: bold;
 }
 
-button:hover {
+#register_btn:hover,
+#login_btn:hover, #add_to_cart:hover {
     background-color: #B0892F;
+}
+
+#firstNameError, #lastNameError, #emailError, #passwordError, #termsError{
+    font-size: 12px;
+    color: red;
+    display: block;
+    margin-top: 4px;
 }
 
 /* ===== PRODUCT SECTION ===== */
@@ -110,12 +188,12 @@ button:hover {
     width: 200px;
     padding: 10px;
     display: inline-block;
-    background-color: #FFF8EE; /* Product BG */
+    background-color: #FFF8EE;
     margin: 10px;
     border-radius: 10px;
     border: 1px solid #E0C097;
     text-align: center;
-    box-shadow: 10px 10px #E0C097;
+    box-shadow: 5px 5px 15px #E0C097;
 }
 
 .product:hover {
@@ -138,4 +216,12 @@ button:hover {
 .product p {
     color: #3E2723;
     margin-top: 5px;
+}
+
+/* Footer */
+.footer {
+    background-color: #6B3E0F;
+    color: #FFF3E0;
+    text-align: center;
+    padding: 15px 0;
 }
