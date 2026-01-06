@@ -2,13 +2,13 @@
 <html>
     <head>
         <title>Register Page</title>
-        <link rel="shortcut icon" href="fabicon.png" type="image/x-icon">
+        <link rel="shortcut icon" href="./images/" type="image/x-icon">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <div id="nav_bar">
             <div id="logo">
-                <img src="logo.png">
+                <img src="./images/logo.png">
             </div>
             <div id="nav">
                 <a href="index.html">Home</a>
@@ -24,34 +24,43 @@
          
         <div class ="container">
             <div id="register_form">
-                <form action="process_register.php" method="post">
+                <form action="process_register.php" method="post" onsubmit="return validateRegister()">
                     <div>
                         <label>First Name</label>
                         <input type="text" name="first_name"id="first_name">
+                        <span id="firstNameError"></span>
                     </div>
                     <br>
                      <div>
                         <label>Last Name</label>
                         <input type="text" name="last_name"id="last_name">
+                        <span id="lastNameError"></span>
                     </div>
                      <br>
                     <div>
                         <label>Email</label>
                         <input type="email" name="email"id="email" placeholder="Enter a valid email">
+                        <span id="emailError"></span>
                     </div>
                      <br>
                     <div>
                         <label>Password</label>
                         <input type="password" name="password"id="password">
+                        <span id="passwordError"></span>
                     </div>
                      <br>
                         <div>
-                         <input type="checkbox"value="1">
+                         <input type="checkbox"value="1" id="terms">
                         Terms and conditions
+                        <span id="termsError"></span>
                         </div>
                          <br>
                         <div>
                             <input type="submit"value="Register"id="register_btn">
                         </div>
+                </form>
+            </div>
+        </div>
+    <script src="script.js"></script>
     </body>
 </html>

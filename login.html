@@ -2,13 +2,13 @@
 <html>
     <head>
         <title>Login Page</title>
-        <link rel="shortcut icon" href="fabicon.png" type="image/x-icon">
+        <link rel="shortcut icon" href="./images/fabicon.png" type="image/x-icon">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <div id="nav_bar">
             <div id="logo">
-                <img src="logo.png">
+                <img src="./images/logo.png">
             </div>
             <div id="nav">
                 <a href="index.html">Home</a>
@@ -23,16 +23,18 @@
         </div>
 
         <div class="container">
-            <form>
+            <form action="process_login.php" method="post" onsubmit="return validateLogin()" >
                 <fieldset id="form">
                     <br>
                        <div>
                         <label>Email</label>
                         <input type="email" name="email"id="email" placeholder="Enter a valid email">
+                        <span id="emailError"></span>
                     </div><br>
                     <div>
                         <label>Password</label>
                         <input type="password" name="password"id="password">
+                        <span id="passwordError"></span>
                     </div><br>
                      <div>
                             <input type="submit"value="login"id="login_btn">
@@ -41,5 +43,6 @@
                 </fieldset>
             </form>
         </div>
+        <script src="script.js"></script>
         </body>
 </html>
