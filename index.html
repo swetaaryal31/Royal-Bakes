@@ -13,10 +13,34 @@
             <div id="nav">
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
+                <a href="product.html">Product</a>
                 <a href="contact.html">Contact</a>
-                 <a href="product.html">Product</a>
             </div>
+            <div class="nav-search">
+        <input type="text" placeholder="Search products...">
+        <button>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24">
+        <path d="M21 21l-4.35-4.35m1.85-5.4a7.25 7.25 0 11-14.5 0 7.25 7.25 0 0114.5 0z"
+              stroke="#3E2723"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"/>
+    </svg>
+        </button>
+    </div>
             <div id="login_register">
+                 <a href="cart.html" class="cart-icon">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24">
+        <path d="M6 6h15l-1.5 7.5H8.25L6 3H3"
+              stroke="#FFF3E0"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"/>
+        <circle cx="9" cy="20" r="1.5" fill="#FFF3E0"/>
+        <circle cx="18" cy="20" r="1.5" fill="#FFF3E0"/>
+    </svg>
+            <span class="cart-count">2</span>
+        </a>
                 <a href="login.html">Login</a>
                 <a href="register.html">Register</a>
             </div>
@@ -28,8 +52,224 @@
                 <a href="product.html" class="hero-btn">Order Now</a>
             </div>
         </div>
-              <footer>
-    <p>&copy; 2026 Royal Cake and Bakery. All rights reserved.</p>
-  </footer>
+
+<!-- ===== ABOUT US SECTION ===== -->
+<section class="aboutus">
+    <h2>About Royal Cake & Bakery</h2>
+
+    <div class="about-content">
+        <img src="./images/bakery.png" alt="About Royal Bakery">
+
+        <p>
+            At <strong>Royal Cake & Bakery</strong>, we believe every celebration deserves
+            something sweet and special. Since our beginning, we have been crafting
+            freshly baked cakes, pastries, and desserts using the finest ingredients.From classic flavors to custom creations, our passion is baking happiness
+            into every bite.
+        </p>
+    </div>
+    <a href="about.html" class="about-btn">See More</a>
+</section>
+
+<!-- ===== SPECIAL OFFERS ===== -->
+<section class="offers-section">
+    <div class="offers-header">
+        <h2>Special Offers</h2>
+        <p>Delicious deals to make your celebrations sweeter!</p>
+    </div>
+
+    <div class="offers-container">
+
+        <div class="offer-card">
+            <div class="offer-icon">🧁</div>
+            <h3>Buy 2 Muffins, Get 1 Free</h3>
+            <p>Enjoy freshly baked muffins in assorted flavors. Perfect for family or office treats!</p>
+            <a href="product.html" class="offer-btn">Grab Offer</a>
+        </div>
+
+        <div class="offer-card">
+            <div class="offer-icon">🎂</div>
+            <h3>10% Off Weekend Orders</h3>
+            <p>Celebrate the weekend with our special discount on cakes and pastries.</p>
+            <a href="product.html" class="offer-btn">Order Now</a>
+        </div>
+
+        <div class="offer-card">
+            <div class="offer-icon">🍪</div>
+            <h3>Free Cookies on Orders Above Rs 500</h3>
+            <p>Sweeten your order with complimentary cookies for large purchases.</p>
+            <a href="product.html" class="offer-btn">Shop Now</a>
+        </div>
+
+    </div>
+</section>
+
+
+
+<!-- ===== BEST SELLER SECTION ===== -->
+<section class="best-seller-section">
+    <h1 class="content_title">Best Seller</h1>
+    <p id="product_p">"Best Seller Products This Week"</p>
+</section>
+
+<div class="container">
+    <div class="product_container">
+
+        <div class="product">
+            <span class="sale-badge">Sale</span>
+            <img src="./images/custardbun.jpg" alt="Custard Bun">
+            <p class="product_description"><b>Custard Bun</b></p>
+            <p class="product_price">Price: Rs 80 <del>Rs 90</del></p>
+            <button id="add_to_cart">Add to cart</button>
+        </div>
+
+        <div class="product">
+            <span class="sale-badge">Sale</span>
+            <img src="./images/battenburg_cake.jpg" alt="battenburg_cake">
+            <p class="product_description"><b>Battenberg Cake</b></p>
+            <p class="product_price">Price: Rs 60 <del>Rs 70</del></p>
+            <button id="add_to_cart">Add to cart</button>
+        </div>
+
+        <div class="product">
+            <span class="sale-badge">Sale</span>
+            <img src="./images/triple_fused_brownie.jpg" alt="Triple Fudge Brownie">
+            <p class="product_description"><b>Triple Fudge Brownie</b></p>
+            <p class="product_price">Price: Rs 80 <del>Rs 90</del></p>
+            <button id="add_to_cart">Add to cart</button>
+        </div>
+
+        <div class="product">
+            <span class="sale-badge">Sale</span>
+            <img src="./images/lemontart.jpg" alt="Lemon Zing Tart">
+            <p class="product_description"><b>Lemon Zing Tart</b></p>
+            <p class="product_price">Price: Rs 70 <del>Rs 80</del></p>
+            <button id="add_to_cart">Add to cart</button>
+        </div>
+
+        <div class="product">
+            <span class="sale-badge">Sale</span>
+            <img src="./images/berryburstmuffin.jpg" alt="Berry Burst Muffin">
+            <p class="product_description"><b>Berry Burst Muffin</b></p>
+            <p class="product_price">Price: Rs 40 <del>Rs 50</del></p>
+            <button id="add_to_cart">Add to cart</button>
+        </div>
+
+        <div class="product">
+            <span class="sale-badge">Sale</span>
+            <img src="./images/caramelswirl.png" alt="Caramel Swirl">
+            <p class="product_description"><b>Caramel Swirl</b></p>
+            <p class="product_price">Price: Rs 70 <del>Rs 80</del></p>
+            <button id="add_to_cart">Add to cart</button>
+        </div>
+
+        <div class="product">
+            <span class="sale-badge">Sale</span>
+            <img src="./images/circular-saws.jpg" alt="Circular Saws">
+            <p class="product_description"><b>Circular Saws</b></p>
+            <p class="product_price">Price: Rs 70 <del>Rs 80</del></p>
+            <button id="add_to_cart">Add to cart</button>
+        </div>
+
+        <div class="product">
+            <span class="sale-badge">Sale</span>
+            <img src="./images/sesame-buns.jpg" alt="Sesame Buns">
+            <p class="product_description"><b>Sesame Buns</b></p>
+            <p class="product_price">Price: Rs 70 <del>Rs 80</del></p>
+            <button id="add_to_cart">Add to cart</button>
+        </div>
+
+    </div>
+</div>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="testimonials">
+    <h2>What Our Customers Say</h2>
+    <div class="testimonial-container">
+
+        <div class="testimonial-card">
+            <div class="customer-info">
+                <img src="./images/Anjali_R.jpg" alt="AnjaliR.">
+                <h4>Anjali R.</h4>
+            </div>
+            <p>"The chocolate fudge cake was divine! Highly recommend Royal Cake & Bakery."</p>
+        </div>
+
+        <div class="testimonial-card">
+            <div class="customer-info">
+                <img src="./images/Rajesh.jpg" alt="Rajesh K.">
+                <h4>Rajesh K.</h4>
+            </div>
+            <p>"Fast delivery and the cake looked exactly like the picture!"</p>
+        </div>
+
+        <div class="testimonial-card">
+            <div class="customer-info">
+                <img src="./images/Sneha.jpg" alt="Sneha M.">
+                <h4>Sneha M.</h4>
+            </div>
+            <p>"Beautifully baked cupcakes! The kids loved them."</p>
+        </div>
+
+    </div>
+</section>
+
+
+
+    <footer class="footer">
+    <div class="footer-container">
+
+        <!-- Brand -->
+        <div class="footer-box">
+            <img src="./images/logo.png" alt="logo">
+            <p>Freshly baked happiness for every celebration.</p>
+
+            <form class="newsletter">
+                <input type="email" placeholder="Enter your email..." required>
+                <button type="submit">✉</button>
+            </form>
+        </div>
+
+        <!-- About Us -->
+        <div class="footer-box">
+            <h3>About Us</h3>
+            <ul>
+                <li><a href="#">Customer Service</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Order Tracking</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Events</a></li>
+            </ul>
+        </div>
+
+        <!-- Categories -->
+        <div class="footer-box">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="#">Cakes</a></li>
+                <li><a href="#">Pastries</a></li>
+                <li><a href="#">Cookies</a></li>
+                <li><a href="#">Custom Orders</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+        </div>
+
+        <!-- Company -->
+        <div class="footer-box">
+            <h3>Company</h3>
+            <ul>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Store Location</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Royal Cake and Bakery. All rights reserved.</p>
+    </div>
+</footer>
+
     </body>
 </html>
