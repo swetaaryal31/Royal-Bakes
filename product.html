@@ -7,69 +7,432 @@
     </head>
     <body>
         <div id="nav_bar">
-            <div id="logo">
-                <img src="./images/logo.png">
-            </div>
-            <div id="nav">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-                <a href="product.html">Product</a>
-            </div>
-            <div id="login_register">
-                <a href="login.html">Login</a>
-                <a href="register.html">Register</a>
-            </div>
-        </div>
+
+    <div id="logo">
+        <img src="./images/logo.png" alt="Royal Bakes">
+    </div>
+
+    <div id="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="product.html">Product</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="nav-search">
+        <input type="text" placeholder="Search products...">
+        <button class="search-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24">
+                <path d="M21 21l-4.35-4.35m1.85-5.4a7.25 7.25 0 11-14.5 0 7.25 7.25 0 0114.5 0z"
+                      stroke="#3E2723"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"/>
+            </svg>
+        </button>
+    </div>
+
+    <div id="login_register">
+        <a href="cart.html" class="cart-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24">
+                <path d="M6 6h15l-1.5 7.5H8.25L6 3H3"
+                      stroke="#FFF3E0"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"/>
+                <circle cx="9" cy="20" r="1.5" fill="#FFF3E0"/>
+                <circle cx="18" cy="20" r="1.5" fill="#FFF3E0"/>
+            </svg>
+            <span class="cart-count">0</span>
+        </a>
+
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+    </div>
+</div>
          <h1 class="content_title">Our Products</h1>
-         <p>"Prices may vary based on size and design."</p>
-        <div class="container">
-            <div class="product_container" >
-                <div class="product">
-                    <img src="https://i.pinimg.com/originals/ed/14/7c/ed147c3f95257010aa2b6b8f5ffc1a8e.jpg" alt="chocolateCake">
-                    <p class="product_description">
-                        <b>Chocolate Cake</b>
-                    </p>
-                    <p class="product_price">
-                        Price:Rs 500
-                    </p>
-                      <button id="add_to_cart">Add to cart</button>
-                </div>
+         <p id="product_p">"Prices may vary based on size and design."</p>
+<section class="category-section">
+    <h2 class="category-title">Cakes</h2>
+    <div class="product_container">
 
-                <div class="product">
-                    <img src="https://i.pinimg.com/originals/de/7c/c2/de7cc26014074224210924ddc1dacacc.jpg" alt="product_name">
-                    <p class="product_description">
-                       <b>Vanilla Cupcake</b> 
-                    </p>
-                    <p class="product_price">
-                        Price:Rs 90
-                    </p>
-                    <button id="add_to_cart">Add to cart</button>
-                </div>
-
-                <div class="product">
-                    <img src="https://i5.walmartimages.com/seo/Hopes-Cookies-Homestyle-Chocolate-Chip-Cookie-Dough-1-5-Ounce-213-per-case_b44d8081-dc98-44ea-bd09-b36f1e30965c.88d62ee7bd44e304a17f63b1c3b9f428.jpeg?odnHeight=580&odnWidth=580&odnBg=FFFFFF" alt="product_name">
-                    <p class="product_description">
-                        <b>Cookies</b>
-                    </p>
-                    <p class="product_price">
-                        Price:Rs 150
-                    </p>
-                      <button id="add_to_cart">Add to cart</button>
-                </div>
-
-                <div class="product">
-                    <img src="https://i0.wp.com/birijus.com/wp-content/uploads/cool-birthday-cake-ideas-8-awesome-birthday-cakes-a-cup-of-jo.jpg?w=640" alt="product_name">
-                    <p class="product_description">
-                        <b>Birthday Cake</b>
-                    </p>
-                    <p class="product_price">
-                        Price:Rs 800
-                    </p>
-                      <button id="add_to_cart">Add to cart</button>
-                </div>
-            </div>
+        <div class="product">
+            <img src="https://i.pinimg.com/originals/ed/14/7c/ed147c3f95257010aa2b6b8f5ffc1a8e.jpg">
+            <p class="product_description"><b>Chocolate Cake</b></p>
+            <p class="product_price">Price: Rs 500</p>
+            <button class="add_to_cart">Add to cart</button>
         </div>
 
+        <div class="product">
+            <span class="sale-badge">Sale</span>
+            <img src="./images/caramelswirl.png">
+            <p class="product_description"><b>Caramel swirl</b></p>
+            <p class="product_price">Price: Rs 800</p>
+            <button class="add_to_cart">Add to cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://th.bing.com/th/id/R.634fa577892c3ff6717ddc8c97a396d9?rik=6pyiG1yVAsgFcA&riu=http%3a%2f%2fwww.taste.com.au%2fimages%2frecipes%2fagt%2f2008%2f05%2f19621.jpg&ehk=5yT6egtaJbt%2bAOKsKjm5tJmh3i%2b0OcKZcPvEIHuQy%2fQ%3d&risl=&pid=ImgRaw&r=0">
+            <p class="product_description"><b>Classic Cheesecake</b></p>
+            <p class="product_price">Price: Rs 650</p>
+            <button class="add_to_cart">Add to cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://cakesbymk.com/wp-content/uploads/2023/09/Template-Size-for-Blog-Photos-49-1203x1536.jpg">
+            <p class="product_description"><b>Swiss Roll Cake</b></p>
+            <p class="product_price">Price: Rs 450</p>
+            <button class="add_to_cart">Add to cart</button>
+        </div>
+
+        <div class="product">
+            <span class="sale-badge">Sale</span>
+            <img src="./images/battenburg_cake.jpg">
+            <p class="product_description"><b>Battenberg Cake</b></p>
+            <p class="product_price">Price: Rs 60</p>
+            <button class="add_to_cart">Add to cart</button>
+        </div>
+
+        <div class="product">
+            <img src="./images/Chiffon-Cake.jpg">
+            <p class="product_description"><b>Chiffon Cake</b></p>
+            <p class="product_price">Price: Rs 550</p>
+            <button class="add_to_cart">Add to cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://c8.alamy.com/comp/PFJG22/stack-of-macadamia-blondie-cakes-close-up-PFJG22.jpg">
+            <p class="product_description"><b>Blondie Cake</b></p>
+            <p class="product_price">Price: Rs 650</p>
+            <button class="add_to_cart">Add to cart</button>
+        </div>
+
+        <div class="product">
+            <span class="sale-badge">Sale</span>
+            <img src="./images/triple_fused_brownie.jpg">
+            <p class="product_description"><b>Triple Fudge Brownie</b></p>
+            <p class="product_price">Price: Rs 80</p>
+            <button class="add_to_cart">Add to cart</button>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="category-section">
+    <h2 class="category-title">Pastries</h2>
+    <div class="product_container">
+
+        <div class="product">
+            <img src="https://i.pinimg.com/originals/de/7c/c2/de7cc26014074224210924ddc1dacacc.jpg">
+            <p class="product_description"><b>Vanilla Cupcake</b></p>
+            <p class="product_price">Price: Rs 90</p>
+            <button class="add_to_cart">Add to cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.ploDcPHuMifYSMeASKYWfgHaHV?rs=1&pid=ImgDetMain&o=7&rm=3">
+            <p class="product_description"><b>Chocolate Pastry</b></p>
+            <p class="product_price">Price: Rs 120</p>
+            <button class="add_to_cart">Add to cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://staticcookist.akamaized.net/wp-content/uploads/sites/22/2023/08/Bakewell-pudding-17.jpg">
+            <p class="product_description"><b>Bakewell Pudding</b></p>
+            <p class="product_price">Price: Rs 120</p>
+            <button class="add_to_cart">Add to cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://th.bing.com/th/id/R.74825248e5a6d8a24ef59b743bf77e95?rik=HUwgn4R4Gra8sQ&pid=ImgRaw&r=0">
+            <p class="product_description"><b>Eccles cake</b></p>
+            <p class="product_price">Price: Rs 120</p>
+            <button class="add_to_cart">Add to cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.YICT6EY_t4XQKaSlgZU0bAHaFj?rs=1&pid=ImgDetMain&o=7&rm=3">
+            <p class="product_description"><b>Victoria sponge</b></p>
+            <p class="product_price">Price: Rs 120</p>
+            <button class="add_to_cart">Add to cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.Go9HUpZlEBbBTM_qySBrZgHaHa?rs=1&pid=ImgDetMain&o=7&rm=3">
+            <p class="product_description"><b>Sticky toffee pudding</b></p>
+            <p class="product_price">Price: Rs 120</p>
+            <button class="add_to_cart">Add to cart</button>
+        </div>
+
+        <div class="product">
+            <span class="sale-badge">Sale</span>
+            <img src="./images/lemontart.jpg">
+            <p class="product_description"><b>Lemon Zing Tart</b></p>
+            <p class="product_price">Price: Rs 120</p>
+            <button class="add_to_cart">Add to cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://lostinfood.co.uk/wp-content/uploads/2019/09/Parkin-2.jpg">
+            <p class="product_description"><b>Parkin</b></p>
+            <p class="product_price">Price: Rs 120</p>
+            <button class="add_to_cart">Add to cart</button>
+        </div>
+
+    </div>
+</section>
+
+<section class="category-section">
+    <h2 class="category-title">Cookies</h2>
+    <div class="product_container">
+
+        <div class="product">
+            <img src="./images/Chocolate-Chip-Cookies.jpg">
+            <p class="product_description"><b>Chocolate Chip Cookies</b></p>
+            <p class="product_price">Price: Rs 150</p>
+            <button class="add_to_cart">Add to cart</button>
+        </div>
+
+        <div class="product">
+            <img src="./images/buttercookies.jpg">
+            <p class="product_description"><b>Butter Cookies</b></p>
+            <p class="product_price">Price: Rs 130</p>
+            <button class="add_to_cart">Add to cart</button>
+        </div>
+
+        <div class="product">
+            <img src="./images/biscotti.jpg">
+            <p class="product_description"><b>Biscotti</b></p>
+            <p class="product_price">Price: Rs 130</p>
+            <button class="add_to_cart">Add to cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://funcookierecipes.com/wp-content/uploads/2022/12/Crumbl-Snickerdoodle-Cookies-1-500x500.jpg">
+            <p class="product_description"><b>Snickerdoodles</b></p>
+            <p class="product_price">Price: Rs 130</p>
+            <button class="add_to_cart">Add to cart</button>
+        </div>
+
+        <div class="product">
+            <img src="./images/oatmeal-raisin-cookie.jpg">
+            <p class="product_description"><b>Oatmeal Raisin Cookies</b></p>
+            <p class="product_price">Price: Rs 130</p>
+            <button class="add_to_cart">Add to cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://anorganizedchaos.com/wp-content/uploads/2024/07/lautaromartinez5822_httpss.mj_.run8JTCIPamIpE_Easy_and_quick_t_b91e9df9-e389-4354-a1a6-af619931c5e1_2.png">
+            <p class="product_description"><b>Coconut Cookies</b></p>
+            <p class="product_price">Price: Rs 130</p>
+            <button class="add_to_cart">Add to cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://greedyeats.com/wp-content/uploads/2019/12/Homemade-shortbread-Cookies-768x1152.jpg">
+            <p class="product_description"><b>Shortbread Cookies</b></p>
+            <p class="product_price">Price: Rs 130</p>
+            <button class="add_to_cart">Add to cart</button>
+        </div>
+
+        <div class="product">
+            <img src="./images/redvelvet.jpg">
+            <p class="product_description"><b>Red Velvet Cookies</b></p>
+            <p class="product_price">Price: Rs 130</p>
+            <button class="add_to_cart">Add to cart</button>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="category-section">
+    <h2 class="category-title">Buns</h2>
+    <div class="product_container">
+
+        <div class="product">
+            <img src="./images/plainbun.jpg">
+            <p class="product_description"><b>Plain Bun</b></p>
+            <p class="product_price">Price: Rs 25</p>
+            <button class="add_to_cart">Add to cart</button>
+        </div>
+
+        <div class="product">
+            <img src="./images/creambun.jpg">
+            <p class="product_description"><b>Cream Bun</b></p>
+            <p class="product_price">Price: Rs 35</p>
+            <button class="add_to_cart">Add to cart</button>
+        </div>
+
+        <div class="product">
+            <img src="./images/sweetbun.jpg">
+            <p class="product_description"><b>Sweet Bun</b></p>
+            <p class="product_price">Price: Rs 30</p>
+            <button class="add_to_cart">Add to cart</button>
+        </div>
+
+        <div class="product">
+            <span class="sale-badge">Sale</span>
+            <img src="./images/sesame-buns.jpg">
+            <p class="product_description"><b>Sesame Bun</b></p>
+            <p class="product_price">Price: Rs 30</p>
+            <button class="add_to_cart">Add to cart</button>
+        </div>
+
+        <div class="product">
+            <img src="./images/Chelsea-buns.jpg">
+            <p class="product_description"><b>Chelsea Bun</b></p>
+            <p class="product_price">Price: Rs 30</p>
+            <button class="add_to_cart">Add to cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://cdn.tasteatlas.com/Images/Dishes/61dca6dafc014e39b9e1f6bbd3bb910a.jpg?mw=2000">
+            <p class="product_description"><b>Mandarin roll</b></p>
+            <p class="product_price">Price: Rs 30</p>
+            <button class="add_to_cart">Add to cart</button>
+        </div>
+
+        <div class="product">
+            <img src="./images/Italian_White_Panini.jpg">
+            <p class="product_description"><b>Italian Panini Bun</b></p>
+            <p class="product_price">Price: Rs 30</p>
+            <button class="add_to_cart">Add to cart</button>
+        </div>
+
+        <div class="product">
+            <span class="sale-badge">Sale</span>
+            <img src="./images/custardbun.jpg">
+            <p class="product_description"><b>Custard Bun</b></p>
+            <p class="product_price">Price: Rs 30</p>
+            <button class="add_to_cart">Add to cart</button>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="category-section">
+    <h2 class="category-title">Other Bakery Items</h2>
+    <div class="product_container">
+
+        <div class="product">
+            <img src="https://corporate.lafromageriesf.com/cdn/shop/products/La_Fromagerie_32092-3_1000x1000.jpg?v=1632607032">
+            <p class="product_description"><b>Butter Croissant</b></p>
+            <p class="product_price">Price: Rs 120</p>
+            <button class="add_to_cart">Add to cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://easydinnerrecipes.com/wp-content/uploads/2022/08/Easy-Garlic-Bread-Recipe-16.jpg">
+            <p class="product_description"><b>Garlic Bread</b></p>
+            <p class="product_price">Price: Rs 160</p>
+            <button class="add_to_cart">Add to cart</button>
+        </div>
+
+        <div class="product">
+            <img src="./images/Classic-Chocolate-Whoopie-Pies.jpg">
+            <p class="product_description"><b>Whoopie Pies</b></p>
+            <p class="product_price">Price: Rs 160</p>
+            <button class="add_to_cart">Add to cart</button>
+        </div>
+
+        <div class="product">
+            <img src="./images/waffle.jpg">
+            <p class="product_description"><b>Waffle</b></p>
+            <p class="product_price">Price: Rs 160</p>
+            <button class="add_to_cart">Add to cart</button>
+        </div>
+
+        <div class="product">
+            <img src="./images/gingerbread.jpg">
+            <p class="product_description"><b>Ginger Bread</b></p>
+            <p class="product_price">Price: Rs 160</p>
+            <button class="add_to_cart">Add to cart</button>
+        </div>
+
+        <div class="product">
+            <img src="./images/ice-cream.jpg">
+            <p class="product_description"><b>IceCream</b></p>
+            <p class="product_price">Price: Rs 160</p>
+            <button class="add_to_cart">Add to cart</button>
+        </div>
+
+        <div class="product">
+            <span class="sale-badge">Sale</span>
+            <img src="./images/berryburstmuffin.jpg">
+            <p class="product_description"><b>Berry Burst Muffin</b></p>
+            <p class="product_price">Price: Rs 70</p>
+            <button class="add_to_cart">Add to cart</button>
+        </div>
+
+        <div class="product">
+            <span class="sale-badge">Sale</span>
+            <img src="./images/circular-saws.jpg">
+            <p class="product_description"><b>Circular Saws</b></p>
+            <p class="product_price">Price: Rs 160</p>
+            <button class="add_to_cart">Add to cart</button>
+        </div>
+
+    </div>
+</section>
+
+
+    <footer class="footer">
+    <div class="footer-container">
+
+        <!-- Brand -->
+        <div class="footer-box">
+            <img src="./images/logo.png" alt="logo">
+            <p>Freshly baked happiness for every celebration.</p>
+
+            <form class="newsletter">
+                <input type="email" placeholder="Enter your email..." required>
+                <button type="submit">✉</button>
+            </form>
+        </div>
+
+        <!-- About Us -->
+        <div class="footer-box">
+            <h3>About Us</h3>
+            <ul>
+                <li><a href="#">Customer Service</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Order Tracking</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Events</a></li>
+            </ul>
+        </div>
+
+        <!-- Categories -->
+        <div class="footer-box">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="#">Cakes</a></li>
+                <li><a href="#">Pastries</a></li>
+                <li><a href="#">Cookies</a></li>
+                <li><a href="#">Custom Orders</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+        </div>
+
+        <!-- Company -->
+        <div class="footer-box">
+            <h3>Company</h3>
+            <ul>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Store Location</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Royal Cake and Bakery. All rights reserved.</p>
+    </div>
+</footer>
     </body>
 </html>
