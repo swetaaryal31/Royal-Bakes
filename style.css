@@ -580,7 +580,7 @@ label {
     font-weight: bold;
     width: 300px;
 }
-#add_to_cart{
+.add_to_cart{
     padding: 6px 10px;
     background-color: #C89B3C; 
     color: #3E2723; 
@@ -1044,4 +1044,9 @@ label {
     .cart-summary {
         text-align: left;
     }
+}
+
+.category-title{
+    text-align: center;
+    margin-top: 30px;
 }
