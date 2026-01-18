@@ -64,7 +64,7 @@ body {
     background-color: #B0892F;
 }
 
-/* ===== CART ICON ===== */
+/*CART ICON*/
 .cart-icon {
     position: relative;
     font-size: 20px;
@@ -83,7 +83,7 @@ body {
     border-radius: 50%;
 }
 
-/* ===== RESPONSIVE NAVBAR ===== */
+/*RESPONSIVE NAVBAR*/
 @media screen and (max-width: 900px) {
     .nav-search {
         display: none;
@@ -91,7 +91,7 @@ body {
 }
 
 
-/* ===== NAV LINKS ===== */
+/*NAV LINKS*/
 #nav,
 #login_register {
     display: flex;
@@ -112,7 +112,7 @@ body {
     color: #C89B3C; 
 }
 
-/* ===== MAIN CONTAINER ===== */
+/*MAIN CONTAINER*/
 .container {
     background-color: #FFF8EE; 
     width: 100%;
@@ -260,7 +260,7 @@ body {
         width: fit-content;
     }
 }
-/* ===== OFFERS ===== */
+/*OFFERS*/
 .offers-section {
     padding: 60px 20px;
     text-align: center;
@@ -332,7 +332,7 @@ body {
     background-color: #8C4E1A;
 }
 
-/* ===== RESPONSIVE ===== */
+/*RESPONSIVE*/
 @media screen and (max-width: 768px) {
     .offers-container {
         flex-direction: column;
@@ -341,7 +341,7 @@ body {
 }
 
 
-/* ===== TESTIMONIALS ===== */
+/*TESTIMONIALS*/
 .testimonials {
     padding: 60px 20px;
     text-align: center;
@@ -386,7 +386,7 @@ body {
     margin: 0;
 }
 
-/* ===== ABOUT EXTRA SECTIONS ===== */
+/*ABOUT EXTRA SECTIONS*/
 .about-extra {
     padding: 60px 20px;
     text-align: center;
@@ -407,7 +407,7 @@ body {
     color: #5c3a21;
 }
 
-/* ===== MISSION & VISION ===== */
+/*MISSION & VISION*/
 .mission-vision {
     display: flex;
     gap: 30px;
@@ -436,7 +436,7 @@ body {
     line-height: 1.7;
 }
 
-/* ===== WHY CHOOSE US ===== */
+/*WHY CHOOSE US*/
 .why-us {
     padding: 60px 20px;
     text-align: center;
@@ -466,7 +466,7 @@ body {
     box-shadow: 3px 3px 10px #E0C097;
 }
 
-/* ===== SPECIALTIES ===== */
+/*SPECIALTIES*/
 .specialties {
     padding: 60px 20px;
     background-color: #fff7f0;
@@ -534,7 +534,7 @@ body {
 
 
 
-/* ===== REGISTER / LOGIN FORM ===== */
+/*REGISTER / LOGIN FORM*/
 #register_form {
     background-color: #fffbf3; 
     width: 350px;
@@ -568,7 +568,7 @@ label {
     width: 300px;
 }
 
-/* ===== BUTTONS ===== */
+/*BUTTONS*/
 #register_btn,
 #login_btn{
     padding: 6px 10px;
@@ -602,7 +602,7 @@ label {
     margin-top: 4px;
 }
 
-/* ===== PRODUCT SECTION ===== */
+/*PRODUCT SECTION*/
 .content_title{
     padding-top: 10px;
      font-size: 32px;
@@ -625,7 +625,7 @@ label {
     justify-content: center;
 }
 
-/* ===== PRODUCT CARD ===== */
+/* PRODUCT CARD*/
 .product {
     position: relative;
     height: 300px;
@@ -657,7 +657,7 @@ label {
     transition: 0.3s;
 }
 
-/* ===== PRODUCT IMAGE ===== */
+/*PRODUCT IMAGE*/
 .product img {
     height: 150px;
     width: 150px;
@@ -666,7 +666,7 @@ label {
     border: 1px solid #E0C097;
 }
 
-/* ===== TEXT ===== */
+/*TEXT*/
 .product h3,
 .product p {
     color: #3E2723;
@@ -675,9 +675,8 @@ label {
 
 /* Footer */
 
-/* ===== FOOTER ===== */
 .footer {
-    background-color: #6B3E0F; /* Same as navbar */
+    background-color: #6B3E0F;
     color: #FFF3E0;
     padding: 50px 0 20px;
     font-family: Arial, sans-serif;
@@ -702,7 +701,7 @@ label {
 .footer-logo {
     font-size: 28px;
     font-weight: bold;
-    color: #FFD59A; /* Gold accent */
+    color: #FFD59A; 
     margin-bottom: 10px;
 }
 
@@ -780,7 +779,7 @@ label {
     color: #FFE8C7;
 }
 
-/* ===== RESPONSIVE FOOTER ===== */
+/*RESPONSIVE FOOTER*/
 @media screen and (max-width: 768px) {
     .footer-container {
         flex-direction: column;
@@ -791,7 +790,7 @@ label {
         justify-content: center;
     }
 }
-/* ===== CONTACT PAGE ===== */
+/*CONTACT PAGE*/
 .contact-section {
     padding: 100px 20px 60px;
     text-align: center;
@@ -837,7 +836,7 @@ label {
     background-color: #B0892F;
 }
 
-/* ===== NEWSLETTER IMAGE SECTION ===== */
+/*NEWSLETTER IMAGE SECTION*/
 .newsletter-banner {
     background-image: linear-gradient(
         rgba(0,0,0,0.8),
@@ -902,7 +901,7 @@ label {
     cursor: pointer;
 }
 
-/* ===== CART SECTION ===== */
+/*CART SECTION*/
 .cart-section {
     padding: 60px 20px;
     background-color: #fff7f0;
